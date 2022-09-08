@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #edf2fc;
+}
+
+/* navigation beginning */
+#g-head {
+    width: 100%;
+     /* height: 100vh; */
+    font-family: 'Galada', 'Quattrocento', 'poppins', 'qahiri', 'wellfeet', sans-serif;
+    position: relative;
+    background-color: #262626;
+    
+}
+#g-head .contain{
+    width: 100%;
+}
+nav h1 {
+    color: white;
+}
+
+nav {
+    width:100%;
+    margin: auto;
+    /* padding: 20px 0; */
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262626;
+
+
+}
+nav i{
+    color: red;
+}
+
+nav ul li :hover {
+    color: blue;
+} 
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    flex-basis: 10%;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-size: 120%;
+
+}
+nav .fas{
+    display: none;
+}
+
+/* End navigation */
+
+/* first body contents */
+#pic {
+    margin-top: 15%;
+    margin-left: 8%;
+    color: blue;
+    line-height: 160%;
+
+}
+
+#pic h2 {
+    /* font-size: 37px; */
+     font-size: 235%; 
+    padding-right: 35%;
+    margin-right: 10%;
+}
+
+#pic h3{
+    display: none;
+}
+#mb-only{
+    display: none;
+}
+span {
+    color: orange;
+}
+
+#pic p {
+    /* font-size: 20px; */
+    font-size: 125%;
+}
+
+.img-box {
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    /* right: 130px; */
+    right: 11%;
+} 
+
+ .img-box img {
+    height: 80%;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    border: 15px solid black;
+    transition: bottom 1s, left 1s;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+
+.img-box:hover #in-img {
+    left: 44%;
+} 
+
+/* End first body contents */
+
+/* About me */
+#about-me {
+    margin-top: 18%;
+    padding: 5% 0;
+}
+
+.sub {
+    color: orange;
+     font-size: 40px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about-me .con-1 {
+    /* flex-basis: 55%; */
+    flex-basis:35%;
+
+}
+
+#about-me .con-1 img {
+    width: 80%;
+    /* width: 65%; */
+    border: 15px solid black;
+    margin-left: 10%;
+    border-radius: 5%;
+}
+
+#about-me .con-2 {
+    /* flex-basis: 40%; */
+    flex-basis: 60%;
+
+
+} 
+#about-me .con-2 .mob{
+    font-size: 105%;
+    color: #262626;
+}
+progress [value] {
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+.p-mobile{
+    display: none;
+}
+
+
+/* END OF ABOUT ME */
+
+/* BEGIN PROJECTS */
+
+#my-projects {
+    margin-top: 10px;
+    padding: 20px 0;
+    padding-left: 11%;
+    padding-right: 2%;
+}
+
+#my-projects h1 {
+    color: orange;
+    text-align: center;
+}
+
+#my-projects h2 {
+    color: blue;
+}
+
+/* #my-projects .col-1 {
+    flex-basis: 50%;
+}
+
+#my-projects .col-2 {
+    flex-basis: 40%;
+} */
+
+
+#my-projects .col-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#my-projects .col-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+#my-projects .col-3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#my-projects .col-4 a {
+    text-decoration: none;
+    color: white;
+}
+button{
+    border: none;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    cursor: pointer;
+    border-radius: 10%;
+    background: orange; 
+}
+
+#my-projects a{
+    font-size: 115%;
+}
+
+/* to the top button */
+.to-top{
+    color:white;
+    background: black;
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   display: flex;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    transition: 4s;
+}
+
+/* end to top button */
+
+/* CONTACT CONTENTS */
+#contact-us{
+    margin-top: 10px;
+    padding: 20px 0;
+    padding-left: 11%;
+    padding-right: 2%;
+
+}
+#contact-us h1{
+    color: orange;
+    text-align: left;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top:30px ;
+}
+.contact-left p i{
+    color: blue;
+    margin-right: 15px;
+    font-size: 35px;
+}
+.soc-med{
+    margin-top: 30px;
+}
+.soc-med a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 25px;
+    color: orange;
+    display: inline-block;
+    transition: transform 1s;
+}
+.soc-med a:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+/* form */
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 6px;
+}
+/* End Form */
+
+/* END CONTACT ME */
+
+/* COPYRIGHT */
+.copyright{
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+
+}
+.copyright i{
+    color: red;
+}
+
+
+/* END COPYRIGHT */
+
+/* CSS FOR SMALL SCREEN */
+@media only screen and (max-width: 1000px){
+    /* MOBILE FOR FIRST BODY CONTENT */
+ #pic{
+    align-items: center;
+    line-height: 180%;
+    margin-bottom: -10%;
+    
+ }   
+ #pic h2{ 
+    display: none;
+   } 
+
+#pic h3{
+    display: block;
+    text-align: center;
+    font-size: 200%;
+   
+} 
+ img#in-img{
+    display: none;
+} 
+#pic p {
+    font-size: 10%;
+    text-align: center;
+    margin-bottom: 15%;
+}
+#pic p {
+    font-size: 20px; 
+    font-size: 125%;
+}  
+
+  span {
+    color: orange;
+}
+/* END FIRST BODY CONTENT */
+
+/* MOBILE NAVIGATION */
+
+nav .fas{
+    display: block;
+    font-size: 25px;
+}
+
+nav ul{
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+/* END NAV */
+
+/* MOBILE ABOUT ME */
+
+.sub{
+    font-size: 25px;
+    /* text-align: center; */
+   margin-left: 20%;
+}
+
+#about-me .con-1,.con-2{
+    flex-basis: 100%;
+}
+
+#about-me .con-1{
+    margin-bottom: 35%;
+    /* padding-bottom: -70%; */
+    width:60% ;
+}
+
+#about-me .con-2{
+    margin-top: -25%;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+#about-me .con-2 .mob{
+    display: none;
+}
+
+.p-mobile{
+    display:inline-block;
+    font-size: 100%;
+    margin-top: -10%;
+}
+/* END ABOUT MOBILE */
+
+/* PROJECTS MOBILE */
+#my-projects .col-1, .col-2, .col-3, .col-4{
+    flex-basis: 100%;
+
+}
+.project{
+    font-size: 25px;
+}
+
+.col-1{
+    margin-bottom: 15%;
+}
+.col-2{
+    margin-bottom: -10%;
+}
+.col-3{
+    margin-bottom: 10%;
+}
+
+/* END PROJECT MOBILE */
+
+/* CONTACT ME */
+#contact-us .contact-left, .contact-right{
+    flex-basis: 100%;
+}
+.contact-left{
+    margin-bottom: 15%;
+}
+
+.contact-left p i{
+    color: blue;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/* END CONTACT ME */
+
+
+}
+
+
+
+
+/* FORM OUTPUT */
+#msg{
+    color: red;
+    margin-top: 20px;
+    display: block;
+}
+/* END FORM OUTPUT */
