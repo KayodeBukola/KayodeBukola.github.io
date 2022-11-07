@@ -3,11 +3,13 @@
     /* MOBILE FOR FIRST BODY CONTENT */
     body{
         --pic-load-time:300ms;
+        overflow-x: hidden;
     
     }
 
     html{
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
  #pic{
     align-items: center;
@@ -71,6 +73,7 @@ nav ul{
     top: 0;
     right: -200px;
     width: 200px;
+    /* width: 100px; */
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
